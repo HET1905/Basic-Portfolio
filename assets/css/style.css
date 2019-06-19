@@ -6,21 +6,25 @@
 }
 
 /* ----------------Common Styling--------------------------- */
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: #999;
-    line-height: 1.2em;
+    line-height: 1em;
 }
-.clear{
+
+.clear {
     clear: both;
 }
+
 nav {
     float: right;
-    margin-top: 45px;
+    margin-top: 35px;
     margin-right: 250px;
-    
+
 }
-h1,h2{
+
+h1,
+h2,h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -32,7 +36,7 @@ ul {
 /* ------------Header Styling-------------------- */
 #mainHeader {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background: #fff;
     border-bottom: 2px solid #ccc;
 }
@@ -50,66 +54,73 @@ li:last-child {
 
 #mainH1 {
     margin-left: 200px;
-    margin-top: 58px;
+    margin-top: 43px;
     padding: 10px;
     float: left;
-    
+    font-size: 1.5em;
     /* border: 1px solid #000; */
     background-color: #4aaaa5;
     color: #fff;
 }
+
 /* ---------mainSectionAboutMe Styling------------ */
-#mainSectionAboutMe{
+#mainSectionAboutMe {
     width: 100%;
     height: 500px;
-    background:#ccc url("../images/background.png") repeat;
+    /* margin:auto auto; */
+    background: #ccc url("../images/background.png") repeat;
     /* border:1px solid #ddd; */
 }
+
 /* ------------------innerSectionAboutMe Styling-------------------------------- */
 
-#innerSectionAboutMe{
+#innerSectionAboutMe {
     position: relative;
-    width: 50%;
+    /* width: 90%; */
+    width: 960px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    top:40px;
-    padding:20px;
-    border:1px solid #ddd;
+    top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
     background: #fff;
 }
-#innerSectionAboutMe header{
+
+#innerSectionAboutMe header {
     margin-bottom: 30px;
-    border-bottom:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
-#innerSectionAboutMe h2{
+
+#innerSectionAboutMe h2 {
     font-size: 1.5em;
-    color:#4aaaa5;
-    margin:10px 0 10px 5px;
+    color: #4aaaa5;
+    margin: 10px 0 10px 5px;
+}
+
+#innerSectionAboutMe p {
+    margin-top: 10px;
+    line-height: 1.8em;
+}
+#innerSectionAboutMe h3{
+    margin-bottom: 15px;
 }
 /* -----------------imgDiv Styling----------------------------- */
-#imgDiv{
+#imgDiv {
     float: left;
     width: 30%;
-    /* border: 1px solid #000; */
-    /* align-content: center; */
+
     text-align: center;
 }
-#imgDiv img{
+
+#imgDiv img {
     width: 150px;
     height: 150px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    
-    /* border:1px solid #000; */
+
 }
-/* ----------------------Artile Styling------------------------ */
-article{
-    /* float: right; */
-    /* width: 70%; */
-}
+
 /* ---------------------Footer Styling------------------------------- */
-footer{
+footer {
     width: 100%;
     height: 50px;
     color: #fff;
