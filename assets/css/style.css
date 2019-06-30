@@ -22,7 +22,10 @@ nav {
     margin-right: 250px;
     /* position: fixed; */
 }
-
+a{
+    text-decoration: none;
+    
+}
 h1,
 h2,
 h3 {
@@ -39,6 +42,7 @@ ul {
     width: 100%;
     height: 80px;
     background: #fff;
+    ;
     border-bottom: 2px solid #ccc;
 
 }
@@ -48,12 +52,19 @@ li {
     padding: 0 15px 0 5px;
     border-right: 1px solid #99a;
     display: inline;
+    
 }
 
 li:last-child {
     border: none;
 }
-
+nav ul li a{
+    color:#222
+}
+nav ul li a:hover{
+    background: #4aaaa5;
+    padding:2px 5px;
+}
 #mainH1 {
     float: left;
     margin-left: 200px;
@@ -73,31 +84,13 @@ li:last-child {
     background: #ccc url("../images/background.png") repeat;
 }
 
-/* 
-#mainSectionAboutMe {
-    width: 100%;
-    height: 500px;
-    background: #ccc url("../images/background.png") repeat;
-} */
 
 /* ------------------innerSectionAboutMe Styling-------------------------------- */
-/* 
-#innerSectionAboutMe {
-    position: relative;
-    
-    width: 960px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 40px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background: #fff;
-} */
+
 .innerSectionClass {
     position: relative;
-    /* width: 90%; */
-    width: 960px;
+    width: 80%;
+    /* width: 960px; */
     height: 480px;
     margin-left: auto;
     margin-right: auto;
@@ -107,24 +100,26 @@ li:last-child {
     background: #fff;
 }
 
-#innerSectionAboutMe header {
+.innerSectionClass header {
     margin-bottom: 30px;
     border-bottom: 1px solid #ddd;
 }
 
-#innerSectionAboutMe h2 {
+.innerSectionClass h2 {
     font-size: 1.5em;
     color: #4aaaa5;
     margin: 10px 0 10px 5px;
 }
 
-#innerSectionAboutMe p {
+.innerSectionClass p {
     margin-top: 10px;
     line-height: 1.8em;
 }
 
-#innerSectionAboutMe h3 {
+.innerSectionClass h3 {
     margin-bottom: 15px;
+    font-size: 1.5em;
+    padding-top: 10px;
 }
 
 /* -----------------imgDiv Styling----------------------------- */
@@ -154,23 +149,101 @@ footer {
 }
 
 /* ------------------------Contact Styling---------------------------------------- */
-label{
+label {
     display: block;
     /* margin-top:5px; */
     margin-bottom: 5px;
 }
-input,textarea{
-width: 90%;
-display: block;
-padding: 5px;
-margin-bottom: 15px;
-border: 1px solid #999;
+
+input,
+textarea {
+    width: 90%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
 }
-#btnSubmit{
+
+#btnSubmit {
     width: 150px;
     background: #4aaaa5;
     color: #fff;
     border: none;
     cursor: pointer;
     font-size: 1.2em;
+}
+
+/* -------------------------------Portfolio Page Styling---------------------------------------------------- */
+.outerSectionPortfolio {
+    height: 700px;
+}
+
+.innerSectionPortfolio {
+    height: 650px;
+}
+#imgContainerDiv{
+    width: 80%;
+    margin:auto auto;
+    text-align: center;
+}
+#imgContainerDiv img{
+    width:250px;
+    height: 250px;
+    border: 1px solid #000;
+}
+#imgContainerDiv img:hover{
+    padding:5px;
+    background: #000;
+    border-radius: 15px;
+}
+
+.imgSectionClass {
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.imgSectionClass h2 {
+    font-size: 0.9em;
+}
+
+/* ------------------------------------------------------------ */
+@media only screen and (max-width:500px) {
+    body {
+        background: red;
+    }
+
+    .innerSectionClass {
+        overflow: auto;
+    }
+
+    #imgDiv {
+        float: none;
+    }
+    #mainH1 {
+        float: none;
+        margin-left: 0px;
+         margin-top: 0px;
+         text-align: center;
+}
+nav {
+    float: none;
+    margin-top: 10px;
+    margin-right: 0px;
+    text-align: center;
+}
+#imgContainerDiv {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+#imgContainerDiv img {
+    width: 150px;
+    height: 150px;
+}
+.imgSectionClass {
+    float: none;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
 }
